@@ -1,0 +1,43 @@
+/* Elevate Tax Solutions — GHL Sidebar Theme v2.0 */
+/* Minimal branding. No JavaScript, font imports, or layout overrides. */
+
+/* --- Brand Variables --- */
+:root {
+  --ets-sidebar-bg: #3F294C;
+  --ets-sidebar-hover: #563765;
+  --ets-sidebar-active: #674476;
+  --ets-sidebar-text: #FFFFFF;
+  --ets-gold: #D8BB87;
+}
+
+/* --- Sidebar Background --- */
+#sidebar-v2,
+.v2-open #sidebar-v2,
+#sidebar-v2.default-bg-color,
+#sidebar-v2 .hl_nav-header,
+#sidebar-v2 .hl_nav-settings {
+  background-color: var(--ets-sidebar-bg) !important;
+}
+
+/* --- Sidebar Navigation Text --- */
+#sidebar-v2 nav a,
+#sidebar-v2 nav a span {
+  color: var(--ets-sidebar-text) !important;
+}
+
+/* --- Sidebar Hover --- */
+#sidebar-v2 nav a:hover {
+  background-color: var(--ets-sidebar-hover) !important;
+}
+
+/* --- Sidebar Active Route --- */
+#sidebar-v2 nav a.active,
+#sidebar-v2 nav a[aria-current="page"] {
+  background-color: var(--ets-sidebar-active) !important;
+}
+
+/* --- Keyboard Focus --- */
+#sidebar-v2 nav a:focus-visible {
+  outline: 2px solid var(--ets-gold) !important;
+  outline-offset: -2px;
+}
